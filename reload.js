@@ -5,6 +5,20 @@ onload = function() {
 
 	console.log(new Date())
 
+	// Create form
+	var form = document.createElement("form")
+	var body = document.getElementsByTagName("body")[0]
+
+	// Configure form
+	form.text = "blah"
+
+	// <form style="float: right">
+	// <input type="checkbox" id="reload" checked>reload<br>
+	// </form>
+
+	// Add it to the DOM
+	body.appendChild(form)
+
 	// Periodically check reload checkbox state
 	setInterval(function () {
 
@@ -12,5 +26,5 @@ onload = function() {
 
 			window.location.reload()
 		}
-	}, 2000)
+	}, 1000)
 }
