@@ -1,3 +1,7 @@
+Not in active development. Became small enough to use inline.
+
+----
+
 Include the JavaScript file at the top of your HTML file. The script parses
 the current URL and reloads the page if the text after the "?" is "reload".
 
